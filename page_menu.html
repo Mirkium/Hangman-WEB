@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/css/style_page_menu.css">
+	<title>Hangman Web menu</title>
+</head>
+<body>
+	<h1>H.A.N.G.M.A.N</h1>
+    <form action="/submit" method="post">
+        <label for="language">Choisissez une langue :</label>
+        <select name="language" id="language">
+            <option value="1">Français</option>
+            <option value="2">English</option>
+            <option value="3">Deutsch</option>
+        </select>
+        <br>
+        
+        <label for="difficulty">Choisissez une difficulté :</label>
+        <select name="difficulty" id="difficulty">
+            <option value="easy">Facile</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Difficile</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
