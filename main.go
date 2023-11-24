@@ -80,6 +80,7 @@ func ReadFileContent(filename string) string {
 	for i := 0; i < len(lines); i++ {
 		test = append(test, lines[i])
 	}
+	fmt.Println(test)
 	mot_random := rand.Intn(len(test))
 	return test[mot_random]
 }
